@@ -1,0 +1,33 @@
+{
+    "name": "yshop/yshop-image",
+    "description": "The yshop Image Package",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "yshop",
+            "email": "dev@yin-duo.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "topthink/framework": "^6.0"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "autoload": {
+        "psr-4": {
+            "yshop\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "yshop\\ImageService"
+            ]
+        }
+    }
+}
